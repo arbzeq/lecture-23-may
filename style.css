@@ -1,0 +1,74 @@
+/* universal selector */
+* {
+    box-sizing: border-box;
+}
+.main-nav {
+    color:rgb(12, 69, 69);
+}
+
+
+
+/* arvselector (Sescendant) */
+li a {
+    color: pink;
+}
+
+/* pseudoklass */
+li:hover, li a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(82, 83, 11);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* id selector */
+#selected-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* attributselektor */
+input[type="text"] {
+    color: hotpink;
+}
+
+/* direct child selector */
+.container li {
+    color: hotpink;
+}
+
+/* first child */
+ul li:first-child {
+    color: rgb(64, 205, 85);
+}
+
+/* last child */
+ul li:last-child {
+    color: rgb(56, 19, 223);
+}
+
+/* Adjascent sibling selector */
+ul + p {
+    color: red;
+}
+
+/* General sibling selector, alla p som kommer efter ul */
+ul ~ p {
+    text-decoration: line-through;
+}
+
+/*X:nth child selector */
+li:nth-child(3) {
+    color: aqua;
+}
+
+/* X:nth-of-type() */
+main section:nth-of-type(1) {
+    border: 3px dotted rgb(34, 217, 40);
+}
